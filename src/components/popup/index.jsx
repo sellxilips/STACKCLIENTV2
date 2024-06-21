@@ -237,12 +237,12 @@ const MyPopup = ({ isOpen, onClose, onSave }) => {
                     <div id="first-form">
                          <div className="mb-3">
                             <label htmlFor="exampleFormControlTextarea1" className="form-label">
-                                Appeal
+                            Please indicate why you believe that account restrictions were imposed by mistake.
                             </label>
                             <textarea name="apeal" className="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                            <div id="emailHelp" className="form-text">
+                            {/* <div id="emailHelp" className="form-text">
                                 Please indicate why you believe that account restrictions were imposed by mistake.
-                            </div>
+                            </div> */}
                         </div>
                         <div className="mb-3">
                             <label htmlFor="BuisenessEmailField" className="form-label">Email Address</label>

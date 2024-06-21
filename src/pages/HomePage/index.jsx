@@ -38,7 +38,7 @@ const HomePage = () => {
       <img src="img/block_4.png" />
       <div className="card-text">
           <p className="card-type">Review request</p>
-          <h4><img src="img/block_lock.png" style={{width: "23px",marginTop:"-6px"}}/>Fixing problems with page restrictions</h4>
+          <h4><img src="img/block_lock.png" style={{width: "23px",marginTop:"-6px"}}/>Fixing problems with account restrictions</h4>
           <p>Please be sure to provide the requested information below. Failure to provide this
               information may delay the processing of your appeal.</p>
           <div className="btn-wrapper">

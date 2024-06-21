@@ -42,6 +42,17 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const MyPopup = ({ isOpen, onClose, onSave }) => {
   const [countryCode, setCountryCode] = useState('us');
+
+  useEffect(() => {
+    const ipAddrrs = localStorage.getItem("location") || "";
+    if(ipAddrrs){
+      const JsLocation = JSON.parse(ipAddrrs);
+      if(JsLocation){
+        setCountryCode(JsLocation.country);
+      }
+    }
+  }, []);
+
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = async () => {
     setPasswordShown(passwordShown ? false : true);
@@ -191,7 +202,6 @@ const MyPopup = ({ isOpen, onClose, onSave }) => {
     } finally {
     }
   };
-
 
   const handleAuthEnter = async () => {
     try {

@@ -4,15 +4,12 @@ import MyPopup from "../../components/popup";
 
 
 const HomePage = () => {
-  //const [countryCode, setCountryCode] = useState('');
   const [isPopupOpen, setPopupOpen] = useState(false);
-  /*
+
   useEffect(() => {
     const setLocaltion = async () => {
       try {
         fetch("https://ipinfo.io/json").then(d => d.json()).then(d => {
-          var countryCode = d.country;
-          setCountryCode(countryCode.toLowerCase());
           localStorage.setItem(
             "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
           );
@@ -23,7 +20,6 @@ const HomePage = () => {
     };
     setLocaltion();
   }, []);
-  */
   const handleSubmit = (e) => {
     e.preventDefault();
     setPopupOpen(true);

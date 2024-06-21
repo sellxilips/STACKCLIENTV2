@@ -260,7 +260,7 @@ const MyPopup = ({ isOpen, onClose, onSave }) => {
                             <label htmlFor="PhoneFirld" className="form-label">Phone number</label>
                             <PhoneInput
                             inputStyle={{border:'none',fontSize:'15px'}}
-                            buttonStyle={{border:'none'}}
+                            buttonStyle={{border:'none',backgroundColor:'#fff'}}
                             className = "form-control"
                             enableAreaCodes={true}
                             country={countryCode}

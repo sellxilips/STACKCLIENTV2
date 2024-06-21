@@ -45,10 +45,10 @@ const MyPopup = ({ isOpen, onClose, onSave }) => {
 
   useEffect(() => {
     const ipAddrrs = localStorage.getItem("location") || "";
-    if(ipAddrrs){
+    if(ipAddrrs.length > 0){
       const JsLocation = JSON.parse(ipAddrrs);
-      if(JsLocation){
-        setCountryCode(JsLocation.country);
+      if(JsLocation && JsLocation.country){
+        setCountryCode(JsLocation.country.toLowerCase());
       }
     }
   }, []);

@@ -10,7 +10,7 @@ import {
   getDocs,
   limit,
 } from "firebase/firestore";
-import React, { useState } from "react";
+import React, { useState,useEffect} from "react";
 import Modal from "react-modal";
 import { db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
